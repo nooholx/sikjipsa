@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: 회원정보 조회 :::</title>
+
+    <script type="text/javascript">
+        function goView(mem_id){
+            url = 'memberapp/member/mem_view/?';
+            url = url + "mem_id=" + mem_id;
+            //alert(url);
+            location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <p3>회원정보 조회</p3>
+    <hr/>
+    세션에 저장된 ID : {{ request.session.ses_mem_id }}
+    <br/>
+    세션에 저장된 이름 : {{ request.session.ses_mem_name }}
+    <br/>
+    <hr/>
+
+    <table border="2">
+        <tr>
+            <th>아이디</th>
+            <th>패스워드</th>
+            <th>이름</th>
+            <th>주소1</th>
+        </tr>
+
+        {% for list in mem_list %}
+            <tr>
+                <!-- 이렇게 쓰면 링크로 여겨. javascript:를 써줘야 자바스크립트로 인식함-->
+                <!-- <td><a href="goView('{{ list.0 }}')">{{ list.0 }}</td> -->
+                <td><a href="javascript:goView('{{ list.mem_id }}')">{{ list.mem_id }}</td>
+                <td>{{ list.mem_pass }}</td>
+                <td>{{ list.mem_name }}</td>
+                <td>{{ list.mem_add1 }}</td>
+            </tr>
+        {% endfor %}
+        
+    </table>
+    <hr/>
+   
+</body>
+</html>

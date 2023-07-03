@@ -1,0 +1,337 @@
+{% include 'etcapp/include/nav.html' %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- 반응형웹 적용을 위한 meta 정의 -->
+    <!-- 스마타폰, 태블릿, pc 등 화면 사이즈에 대응 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>offline</title>
+  <link rel="stylesheet" href="/static/oneclassapp/css/style1.css">
+
+  <!-- 구글 무료 폰트 가져오기-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+  <!-- 아이콘 가져올 외부스크립트! -->
+  <script src="https://kit.fontawesome.com/b9153e7eba.js" 
+          crossorigin="anonymous"></script>
+  <script src="/static/etcapp/js/nav.js" defer></script>
+  <!-- jquery 외부파일 또는 CDN 불러오기-->
+
+  <script type = 'text/javascript'
+      src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+  <script language="javaScript">
+   
+  </script>
+  <style>
+   /* 캐러셀(이미지슬라이드) 이미지 크기변경 */
+   .carousel-inner{
+    width:auto;
+    height:250px; /* 이미지 높이 변경 */
+  }
+  .carousel-item{
+    width: auto;
+    height: 250px;;
+  }
+  .d-block {
+    display:block;
+    width: auto;
+    height: 250px;
+  }
+  
+ 
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+  
+    #myBtn:hover {
+      background-color: #555;
+    }
+    input:focus,
+    input:active,
+    button:focus,
+    button:active {
+      outline: none;
+      box-shadow: none;
+    }
+
+    #wrapper2{
+      display : grid;
+      height: 80px;
+    }
+  
+    #wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+ 
+
+  </style>
+    <!-- css 외부파일 또는 CDN 불러들이기 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <!-- jQuery 외부파일 CDN 불러들이기 -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+
+<!-- ******************************************************************************************************************** -->
+<div id="wrapper2">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active"  data-bs-interval="4000" >
+      <img src="https://ifh.cc/g/Gt8TBM.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" >
+      
+    </div>
+  </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="https://ifh.cc/g/YnDggj.jpg" class="d-block w-100" alt="..."  >
+      <div class="carousel-caption d-none d-md-block">
+      
+    </div>
+  </div>
+    <div class="carousel-item"data-bs-interval="2000" >
+      <img src="https://ifh.cc/g/xGylD9.jpg" class="d-block w-100" alt="..."  >
+      <div class="carousel-caption d-none d-md-block">
+      
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- ************************************************************************************************************************* -->
+<!-- 1 -->
+<div id="wrapper">
+  <div class="card" style="width: 18rem; margin: 30px; float: left; background-color:white">
+  <a href="https://www.instagram.com/celebriteflower_studio/"><img src="https://ifh.cc/g/Hn2CVD.jpg" class="card-img-top" alt="..."></a>
+  
+  <a href="https://www.instagram.com/celebriteflower_studio/">대전꽃집/원데이클래스/유성구꽃집/셀레브리떼</a>
+  <button style="border:none ; background-color:white" type="button"onClick="location.href='https://open.kakao.com/o/sj27y5Od'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://www.instagram.com/celebriteflower_studio/'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+</div>
+  <!-- 2 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+  <a href="https://www.instagram.com/boniq.official/"><img src="https://ifh.cc/g/2j7CD6.jpg" class="card-img-top" alt="..."></a>
+
+  <a href="https://www.instagram.com/boniq.official/">대전화분/가드닝클래스/BONIQ 보닉 #플랜테리어 #분재클래스 #실내조경</a>
+  
+  <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://www.instagram.com/boniq.official/"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>    
+
+</div>
+<!-- 3 -->
+    <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/flower.picnics/"><img src="https://ifh.cc/g/FX5cfn.jpg" class="card-img-top" alt="..."></a>
+
+    <a href="https://www.instagram.com/flower.picnics/">대전꽃집/가드닝클래스/플라워클래스/피크닉스</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+
+    </div>
+
+
+  <!-- 4 -->
+    <div class="card" style="width: 18rem; margin: 30px; float: left;">
+      <a href="https://www.instagram.com/selene._.flower/"><img src="https://ifh.cc/g/CT66AL.jpg" class="card-img-top" alt="..."></a>
+      <a href="https://www.instagram.com/selene._.flower/">대전괴정동꽃집/가드닝클래스/플라워클래스/셀레네플라워</a>
+      <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+      <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top"  alt="..."></button>  
+    </div>
+  <!-- 5 -->
+    <div class="card" style="width: 18rem; margin: 30px; float: left;">
+      <a href="https://www.instagram.com/story_in_garden_daejeon/"><img src="https://ifh.cc/g/8mh5zS.jpg" class="card-img-top" alt="..."></a>
+    
+      <a href="https://www.instagram.com/story_in_garden_daejeon/">대전관평동꽃집/플라워클래스/가드닝클래스/이케바나테라리움/스토리인가든</a>
+      <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+    </div>
+  <!-- 6 -->
+    <div class="card" style="width: 18rem; margin: 30px; float: left;">
+      <a href="https://m.blog.naver.com/PostList.naver?blogId=h4314296"><img src="https://ifh.cc/g/tBy2Nz.jpg" class="card-img-top" alt="..."></a>
+    
+      <a href="https://m.blog.naver.com/PostList.naver?blogId=h4314296">대전도안동꽃집/테라리움클래스/보테니컬아트/홈가드닝</a>
+      <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+    </div>
+
+  <!-- 7 -->
+    <div class="card" style="width: 18rem; margin: 30px; float: left;">
+      <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/gspPab.jpg" class="card-img-top" alt="..."></a>
+    
+      <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+      <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+      <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+    </div>
+  
+  <!-- 8 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/9Tkk3c.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+    <!-- 9 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/3ZOQBj.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+   <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+    <!-- 10 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+      <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/vYR9qy.jpg" class="card-img-top" alt="..."></a>
+    
+      <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+      <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+    <!-- 11-->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/bvKg7f.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+  <!-- 12 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/QZyb5q.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+  <!-- 13 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/Aqxnm9.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+  <!-- 14 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/Ld8lf8.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+    
+  </div>
+  <!-- 15 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/5Fls5p.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+  <!-- 16 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/wVKngk.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+  <!-- 17 -->
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/fG3MqS.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/sa2HT1.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+
+
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/j3hsko.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+
+
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/BRwnzK.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+  <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>  
+  </div>
+
+  <div class="card" style="width: 18rem; margin: 30px; float: left;">
+    <a href="https://www.instagram.com/atelier_c_flower/"><img src="https://ifh.cc/g/lMQrT4.jpg" class="card-img-top" alt="..."></a>
+  
+    <a href="https://www.instagram.com/atelier_c_flower/">대전둔산동꽃집/플라워/플랜드/센터피스/아틀리에초이</a>
+    <button style="border:none ; background-color:white" type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/mg6Az1.jpg" class="card-img-top" alt="..." ></button>  
+    <button style="border:none ; background-color:white"type="button"onClick="location.href='https://linktr.ee/celebriteflower'"><img src="https://ifh.cc/g/jOqgFz.jpg"class="card-img-top" ></button>   
+  </div>
+</div>
+ 
+{% include 'etcapp/include/bottom.html' %}
+    
+    <!-- 부트스트랩 js 적용 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
+

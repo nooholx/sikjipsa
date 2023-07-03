@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    font-family: 'Gowun Dodum';
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display:grid;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: white;
+    font-family: 'Gowun Dodum';
+
+
+}
+.navbar__hambttn{
+    position:absolute;
+    right: 32px;
+    font-size: 24px;
+    color: green;
+}
+.navbar__logo {
+    font-size: 24px;
+    color: green;
+    
+}
+
+.navbar__logo i {
+    color: green;
+
+}
+.big__menu {
+    font-weight: bold;
+    list-style: none;
+}
+.navbar__menu {
+
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    left: 0px;
+    
+
+}
+.navbar__menu li {
+    padding: 8px 12px;
+
+}
+
+
+
+@media screen{
+    .navbar{
+        align-items: flex-start;
+        padding: 5px 24px;
+        margin-left: 10px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .small__menu li{
+        list-style: none;
+        padding: 8px 24px;
+    }
+    .navbar__hambttn{
+        display: block;
+        top: 20px;
+        
+    }
+
+    .navbar__menu.active {
+        display: grid;
+    }
+
+    .s_small_menu li{
+
+        padding: 0px 5px;
+    }
+
+}
+/* 이미지파일 */
+.jb-box { width:100%; height: 700px; object-fit: fill; overflow: hidden; margin: 0px auto; position: relative; opacity:0.5; }
+video { width: 100%; min-width:1600px; max-width:1600px; }
+.jb-text { position: absolute; text-align: center; top: 50%; width: 100%; }
+.jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+
+
+/* 퀵메뉴 */
+html{height:100%;}
+body{height: 100%}
+button{border:0;cursor:pointer;}
+a{color:#000;text-decoration:none;line-height:1;}
+
+.wrap{height:100%;}
+.content{position:relative;;}
+.content .section{height:710px;}
+
+.menu li{
+    list-style-type:circle;
+}
+
+/* style */
+.box-shortcut{position:fixed;right:50px;top:50%;z-index:14000;}
+.box-shortcut{background:#fff}
+.box-shortcut .menu > li > a{display:block;padding: 10px; }
+
+.box-shortcut .menu > li:first-child > .on{border-radius: 0;}
+.box-shortcut .btn-scroll-top{padding:20px 50px;background:#000;}
+.box-shortcut .btn-scroll-top{color:#fff;}
+
+
+

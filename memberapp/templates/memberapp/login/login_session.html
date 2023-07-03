@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/static/etcapp/css/style.css">
+
+    <!-- 구글 무료 폰트 가져오기-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    
+    <style>
+        .div a{
+            padding-left: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+        <div class = "div">
+            <a href = "/member/mypage/" style="text-decoration: none; color:black;">{{ request.session.ses_mem_name }}님</a>
+            <a href = "/member/logout/" style="text-decoration: none; color:black;">로그아웃</a>
+        </div>
+</body>
+</html>

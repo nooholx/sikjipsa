@@ -1,0 +1,105 @@
+body{
+    margin:0;
+    font-family: 'Gowun Dodum';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+.navbar__hambttn{
+    position:absolute;
+    right: 32px;
+    font-size: 24px;
+    color: green;
+}
+.navbar__logo {
+    font-size: 24px;
+    color: green;
+}
+.navbar__logo i {
+    color: green;
+}
+.big__menu {
+    font-weight: bold;
+    list-style: none;
+}
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    left: 0px;
+    
+
+}
+.navbar__menu li {
+    padding: 8px 12px;
+
+}
+
+
+
+@media screen{
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .small__menu li{
+        list-style: none;
+        padding: 8px 24px;
+    }
+    .navbar__hambttn{
+        display: block;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+
+}
+
+/* 이미지파일 */
+.jb-box { width:100%; height: 713px; object-fit: fill; overflow: hidden; margin: 0px auto; position: relative; opacity:0.5; }
+video { width: 100%; min-width:1600px; max-width:1600px; }
+.jb-text { position: absolute; text-align: center; top: 50%; width: 100%; }
+.jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+
+
+/* 퀵메뉴 */
+html, body{height: 713px;}
+button{border: 0px; cursor:pointer;}
+a{color:#000;text-decoration:none;line-height:1;}
+
+.wrap{height:100%; }
+.content{position:static;height:100%; }
+.content .section{height:100%;}
+.content .con1{background-color:#877249;}
+.content .con2{background-color:#593d91;}
+.content .con3{background-color:#ed6cc3;}
+.content .con4{background-color:#089191;}
+
+.box-shortcut{position:fixed;right:50px;top:50%;z-index:9000;}
+.box-shortcut{ background:#fff}
+.box-shortcut .menu > li > a{display:block;padding:10px 20px;box-sizing:border-box;}
+.box-shortcut .menu > li > .on{ padding:10px ; background:green;}
+
+.box-shortcut .btn-scroll-top{padding:15px 55px;background:#000;}
+.box-shortcut .btn-scroll-top{color: #fff;}
+
+

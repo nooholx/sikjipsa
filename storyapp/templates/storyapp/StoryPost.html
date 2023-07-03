@@ -1,0 +1,61 @@
+{% include 'etcapp/include/nav.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ::: 게시물 등록 ::: </title>
+
+    <link rel="stylesheet" href="/static/storyapp/css/storycss.css">
+
+    <script type = "text/javascript">
+        function goBack(){
+            history.go(-1);
+        }
+    </script>
+
+    {% comment %} <style>
+        body {
+            background-image:url("https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/84nL/image/IOj2vjJHF8OmH4ethnzJGgQtrSY.png") ;
+            background-size: cover;
+        }
+    </style> {% endcomment %}
+
+</head>
+<body>
+    <div class ="board_wrap">
+        <div class="board_title">
+        <strong>게시물 등록 페이지</strong>
+    </div>
+    <div class ="board_write_wrap">
+        <div class="board_write">
+            <form name="pt" id = "pt" action="/story/post_insert/" method = "POST"
+                enctype="multipart/form-data">
+            {% csrf_token %}
+                <div class="title">
+                    <dl>
+                        <dt>제 목</dt>
+                        <dd><input type = "text" name="title" size = "20"
+                            required placeholder='제목을 입력하세요'></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>첨부 파일</dt>
+                        <dd><input type="file" name = "file_nm"></dd>
+                    </dl>
+                    <br/>
+                    <dt>입력 내용 : </dt>
+                    <dd><input type ="text" name = "content"
+                        required placeholder='내용을 입력하세요'></dd>
+                </div>
+                <hr/>
+                <input type="submit" value = "게시물 등록" style = "text-align:center">
+                <button onClick="goBack()">뒤로가기</button>
+    </form>
+    <br/>
+    
+</body>
+</html>
