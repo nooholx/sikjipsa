@@ -27,7 +27,6 @@ DATABASES = my_settings.DATABASES
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)u$8=kg%bh%ks0h^!&if77xg@2f1*mn-739mc_$k()djk4%)$@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,23 +92,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
-    
-    ## 오라클 데이터베이스 설정(정의)
-    ## 'oracle'은 키이름임
-    'oracle': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe',
-        'USER':'sikjipsa',
-        'PASSWORD':'dbdb',
-        'HOST':'localhost',
-        'PORT':'1521',
-    }
-}
+
 
 ### 데이터베이스가 추가될 경우
 ### - 사용할 APP을 아래에 추가
